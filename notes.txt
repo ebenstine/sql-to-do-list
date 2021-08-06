@@ -2,12 +2,12 @@ Weekend To-Do List
 
 CLIENT/FRONT END (client.js, index.html, css)
 ** TASK ITEMS **
-[ ] create all needed files
-[ ] source the files 
-[ ] create input form for task
+[x] create all needed files
+[x] source the files 
+[x] create input form for task
     ** optional inputs?
         [ ] location in house
-        [ ] how important is this? priority 1,2,3
+        [x] how important is this? priority 1,2,3
 
 [ ] create click handlers
 [ ] store the task to the SQL database 

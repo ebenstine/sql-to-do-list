@@ -19,12 +19,12 @@
             <label>Task:</label><input type="text" name="" value="" id="taskInput" size="50">
             <br />
             <label>Importance:</label>
-                <select id="importanceInput" 
-                        placeholder= "how stupidly happy once complete" 
+                <select required id="priorityInput" >
+                        <option value= ''>Priority</option>'  
                 >   
-                        <option>Big Time!</option>
-                        <option>Sure?</option>
-                        <option>MEH</option>
+                        <option>Urgent</option>
+                        <option>Secondary</option>
+                        <option>Merely Theoretical</option>
         </select>   
 
             <br />
@@ -37,7 +37,7 @@
                     <thead>
                         <tr>
                             <th>Grown-Up-Ass Task</th>
-                            <th>Degree of Necessity</th>
+                            <th>Priority</th>
                         </tr>
                     </thead>
                     <tbody id="taskList">
