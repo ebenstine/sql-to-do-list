@@ -5,8 +5,8 @@ $(document).ready(function () {
     // Establish Click Listeners
     setupClickListeners()
     // load existing koalas on page load
-    refreshTasks();
-    handleSubmit();
+    getTasks();
+    
 }); // end doc ready
 
 function setupClickListeners() {
