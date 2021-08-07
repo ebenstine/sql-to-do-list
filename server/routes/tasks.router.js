@@ -27,7 +27,7 @@ tasksRouter.post('/', (req, res) => {
 
     let queryText = `
         INSERT INTO "tasks"
-            ("description, "priority")
+            ("description", "priority")
         VALUES
             ($1, $2);
     
