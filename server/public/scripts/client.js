@@ -45,6 +45,7 @@ function saveTask(newTask){
         console.log(response);
         $('#taskInput').val('')
         $('#priorityInput').val('')
+        
         getTasks();
     }).catch ((error) => {
         console.log('error in POST!', error);

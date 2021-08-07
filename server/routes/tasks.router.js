@@ -53,7 +53,7 @@ tasksRouter.put('/:id', (req, res) => {
 
     let queryText = `
         UPDATE "tasks"
-        SET "complete" = NOT "complete"
+        SET "status" = NOT "status"
         WHERE "id" = $1;
     `;
 
