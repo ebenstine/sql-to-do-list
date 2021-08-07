@@ -16,7 +16,7 @@ function setupClickListeners() {
         let taskToDo = {
             description: $('#taskInput').val(),
             priority: $('#priorityInput').val(),
-            status: $()
+            
         };
         saveTask(taskToDo);
     });
@@ -99,3 +99,4 @@ function renderTasks(tasks){
     }
 
 } 
+
