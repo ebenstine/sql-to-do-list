@@ -15,7 +15,8 @@ function setupClickListeners() {
 
         let taskToDo = {
             description: $('#taskInput').val(),
-            priority: $('#priorityInput').val()
+            priority: $('#priorityInput').val(),
+            status: $()
         };
         saveTask(taskToDo);
     });
@@ -91,7 +92,7 @@ function renderTasks(tasks){
             <tr data-id="${task.id}">
                 <th>${task.description}</th>
                 <th>${task.priority}</th>
-                <th><button class="toggleComplete">${task.complete ? "Complete": "Incomplete"}</button><th>
+                <th><button class="toggleComplete">${task.status ? "Complete": "Incomplete"}</button><th>
                 <th><button class="deleteBtn"> Delete </button>
             </tr>
             `);
