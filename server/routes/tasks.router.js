@@ -7,9 +7,9 @@ const pool = require('../modules/pool');
 //GET 
 tasksRouter.get('/', (req, res) => {
     let queryText = `
-    SELECT "id", "description", "priority"
+    SELECT "id", "description", "priority", "status"
     FROM "tasks"
-    ORDER BY "priority";
+    
     `;
     pool.query(queryText).then(result => {
         res.send(result.rows);
@@ -27,14 +27,15 @@ tasksRouter.post('/', (req, res) => {
 
     let queryText = `
         INSERT INTO "tasks"
-            ("description", "priority")
+            ("description", "priority", "status")
         VALUES
-            ($1, $2);
+            ($1, $2, $3);
     
     `;
     let sqlParams = [
         newTask.description,
-        newTask.priority
+        newTask.priority,
+        newTask.status
     ];
     console.log(sqlParams);
 
