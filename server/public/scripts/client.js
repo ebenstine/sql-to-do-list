@@ -16,6 +16,8 @@ function setupClickListeners() {
         let taskToDo = {
             description: $('#taskInput').val(),
             priority: $('#priorityInput').val(),
+            status: $('#statusInput').val()
+            
             
         };
         saveTask(taskToDo);
@@ -45,6 +47,7 @@ function saveTask(newTask){
         console.log(response);
         $('#taskInput').val('')
         $('#priorityInput').val('')
+        $('#statusInput').val('')
         
         getTasks();
     }).catch ((error) => {
@@ -100,4 +103,3 @@ function renderTasks(tasks){
     }
 
 } 
-

@@ -10,9 +10,9 @@ DROP TABLE "tasks";
 INSERT INTO "tasks"
     ("desription", "priority", "status")
 VALUES
-    ('Wire up new fixture', '3', false)
-    ('Reorganize garage', '2', false)
-    ('Squirrel-proof garden' '1', false)
-    ('Fix french press?' '1', false)
+    ('Wire up new fixture', '3', false),
+    ('Reorganize garage', '2', false),
+    ('Squirrel-proof garden', '1', false),
+    ('Fix french press?', '1', false);
     
 SELECT * FROM "tasks";

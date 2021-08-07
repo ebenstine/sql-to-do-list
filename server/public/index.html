@@ -11,30 +11,38 @@
 
 <body>
     <header>
-        <h1>Weekend To-Do List</h1>
-        <h2><em>Or: The Neverending Story</em></h2>
+        <h1>Weekend to-do list for 8/7/21</h1>
+        <h2><em>Let's just do our best</em></h2>
     </header>
     <main>
         <section>
-            <h3>Add A Task</h3>
-            <label>Description:</label><input type="text" value="" id="taskInput" size="50">
-            <br />
+            <h3>Enter item here with relevant details, then record:</h3>
+            <label>Description:</label><input type="text" value="" id="taskInput" placeholder="add task details"
+                size="50">
+            <br/>
+            <br/>
             <label>Priority:</label>
-                <select required id="priorityInput" >
-                        <option value= ''>1 = urgent, 2 = eventual, 3 = theoretical</option>'  
-                >   
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-        </select>   
-            
-            <br />
-            <button type="button" id="submitBtn">Add Task</button>
+            <select required id="priorityInput">
+                <option value=''></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Completed:</label><input type="text" value="" id="statusInput" placeholder="Y/N" size="10">
+            <br/>
+            <br/>
+            <button type="button" id="submitBtn">Record Task</button>
         </section>
-        <section>
+        <section class="taskTable">
             <div>
-                <h3>Task List</h3>
-                <table>
+                <h1><b>Task List</b></h1>
+                <p>(Note: maybe start the list with things that were already done to get some endorphins.  If the task isn't
+                    done yet, change the status to complete once it is.  Leave it there for the positive reinforcement, or get rid of it if it feels 
+                    better to let it go.)
+                </p>
+                <table class="center">
                     <thead>
                         <tr>
                             <th>Task</th>

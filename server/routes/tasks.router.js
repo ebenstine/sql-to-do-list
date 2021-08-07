@@ -10,6 +10,7 @@ tasksRouter.get('/', (req, res) => {
     SELECT "id", "description", "priority", "status"
     FROM "tasks"
     
+    
     `;
     pool.query(queryText).then(result => {
         res.send(result.rows);
@@ -88,4 +89,4 @@ tasksRouter.delete('/:id', (req, res) => {
         });
 })
 
-module.exports = tasksRouter
+module.exports = tasksRouter;
