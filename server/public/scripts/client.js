@@ -6,11 +6,11 @@ $(document).ready(function () {
     setupClickListeners()
     // load existing koalas on page load
     getTasks();
-    
+    $('#taskList').on('click', '.deleteBtn', deleteTask);
 }); // end doc ready
 
 function setupClickListeners() {
-    $('#taskList').on('click', '.deleteBtn', deleteTask);
+    $('#taskList').on('click', '.toggleComplete', markTaskComplete);
     $('#submitBtn').on('click', function () {
 
         let taskToDo = {
@@ -92,7 +92,7 @@ function renderTasks(tasks){
                 <th>${task.description}</th>
                 <th>${task.priority}</th>
                 <th><button class="toggleComplete">${task.complete ? "Complete": "Incomplete"}</button><th>
-                <th><button class-"deleteBtn"> Delete </button>
+                <th><button class="deleteBtn"> Delete </button>
             </tr>
             `);
     }
