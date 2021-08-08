@@ -4,8 +4,17 @@ body {
     color:rgb(126, 166, 226);
     text-align: center;
 }
+
+body {
+    background-color: rgb(1, 1, 49);
+    font-family: monospace;
+    color:rgb(126, 166, 226);
+    text-align: center;
+}
 #submitBtn {
-    background: rgb(255, 127, 76)
+    background: rgb(255, 127, 76);
+    border-radius: 5px;
+    padding: 7px; 
 }
 
 p {
@@ -17,4 +26,20 @@ p {
 .center{
     margin-left: auto;
     margin-right: auto;
+}
+.taskDone {
+    background:rgb(136, 224, 136);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.toggleTask {
+    background: rgb(255, 127, 76);
+    border-radius: 5px;
+    padding: 7px;
+}
+.deleteBtn{
+    background: rgb(165, 43, 43);
+    border-radius: 5px;
+    padding: 7px;
 }

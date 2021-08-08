@@ -10,7 +10,7 @@ $(document).ready(function () {
 }); // end doc ready
 
 function setupClickListeners() {
-    $('#taskList').on('click', '.toggleComplete', markTaskComplete);
+    $('#taskList').on('click', '.toggleTask', markTaskComplete);
     $('#submitBtn').on('click', function () {
 
         let taskToDo = {
@@ -96,10 +96,17 @@ function renderTasks(tasks){
             <tr data-id="${task.id}">
                 <th>${task.description}</th>
                 <th>${task.priority}</th>
-                <th><button class="toggleComplete">${task.status ? "Complete":"Incomplete"}</button><th>
+                <th><button class="${task.status ? "taskDone":"toggleTask"}">
+                ${task.status ? "Finished": "To Do"}</button></th>
+                
                 <th><button class="deleteBtn"> Delete </button>
             </tr>
             `);
     }
 
+
 } 
+
+
+
+//${task.status ? "Checked Off!": "Complete"}</th>
