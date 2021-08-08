@@ -5,7 +5,7 @@ CREATE TABLE "tasks" (
     "status" BOOLEAN DEFAULT FALSE,
     );
 
-DROP TABLE "tasks";
+
 
 INSERT INTO "tasks"
     ("desription", "priority", "status")
@@ -14,5 +14,6 @@ VALUES
     ('Reorganize garage', '2', false),
     ('Squirrel-proof garden', '1', false),
     ('Fix french press?', '1', false);
+    ('Buy beer'), '1', false);
     
 SELECT * FROM "tasks";

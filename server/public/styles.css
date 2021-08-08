@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    border-bottom: 1px solid rgb(255, 127, 76);
+}
+
 body {
     background-color: rgb(1, 1, 49);
     font-family: monospace;
@@ -26,20 +30,26 @@ p {
 .center{
     margin-left: auto;
     margin-right: auto;
+    
 }
+
+
 .taskDone {
-    background:rgb(136, 224, 136);
+    background:rgb(93, 158, 93);
     border-radius: 5px;
     padding: 7px;
+   
 }
 
 .toggleTask {
     background: rgb(255, 127, 76);
     border-radius: 5px;
     padding: 7px;
+    
 }
 .deleteBtn{
     background: rgb(165, 43, 43);
     border-radius: 5px;
     padding: 7px;
+    
 }

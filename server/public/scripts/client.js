@@ -4,12 +4,13 @@ $(document).ready(function () {
     console.log('JQ');
     // Establish Click Listeners
     setupClickListeners()
-    // load existing koalas on page load
+    // load existing tasks on page load
     getTasks();
-    $('#taskList').on('click', '.deleteBtn', deleteTask);
+    
 }); // end doc ready
-
+//establishes click listeners for buttons
 function setupClickListeners() {
+    $('#taskList').on('click', '.deleteBtn', deleteTask);
     $('#taskList').on('click', '.toggleTask', markTaskComplete);
     $('#submitBtn').on('click', function () {
 
@@ -23,7 +24,7 @@ function setupClickListeners() {
         saveTask(taskToDo);
     });
 }
-
+//get task data from the server
 function getTasks(){
     console.log( 'in getTasks');
     $.ajax({
@@ -36,7 +37,7 @@ function getTasks(){
         console.log('error in GET!', error);
     });
 }//end getTasks
-
+//save task information 
 function saveTask(newTask){
     console.log('in saveTask', newTask);
     $.ajax({
@@ -56,7 +57,7 @@ function saveTask(newTask){
 
     });
 }
-
+//provides logic for the delete button
 function deleteTask(){
     console.log('in deleteTask', $(this));
 
@@ -73,7 +74,7 @@ function deleteTask(){
          alert('Unable to delete task!');
      })
 }
-
+//provides logic for the status button
 function markTaskComplete(){
     let taskId = $(this).closest('tr').data().id;
     console.log('task id', taskId);
@@ -87,7 +88,7 @@ function markTaskComplete(){
     })
 }
 
-
+//prints task info to the DOM and provides logic for the css class switch
 function renderTasks(tasks){
     let outputElement = $('#taskList');
     outputElement.empty();
@@ -109,4 +110,5 @@ function renderTasks(tasks){
 
 
 
-//${task.status ? "Checked Off!": "Complete"}</th>
+//Maybe I went a little light on comments in this.  I felt ok about it since I wrote the README.
+c

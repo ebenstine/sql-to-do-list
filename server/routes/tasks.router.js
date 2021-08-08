@@ -21,7 +21,7 @@ tasksRouter.get('/', (req, res) => {
 
 });
 
-//POST
+//POST // makes query request to database 
 tasksRouter.post('/', (req, res) => {
     let newTask = req.body;
     console.log('new task:', newTask);
@@ -48,7 +48,7 @@ tasksRouter.post('/', (req, res) => {
             res.sendStatus(500);
         });
 });
-//PUT
+//PUT // updates task data that enables ternary switch in client logic
 tasksRouter.put('/:id', (req, res) => {
     let id = req.params.id
     console.log(`updating task ${id}`);

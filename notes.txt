@@ -6,29 +6,29 @@ CLIENT/FRONT END (client.js, index.html, css)
 [x] source the files 
 [x] create input form for task
     ** optional inputs?
-        [ ] location in house
+        [-] location in house
         [x] how important is this? priority 1,2,3
 
-[ ] create click handlers
-[ ] store the task to the SQL database 
-[ ] append buttons for complete and delete with every entry
-[ ] when a task is complete, change the visual representation somehow
+[x] create click handlers
+[x] store the task to the SQL database 
+[x] append buttons for complete and delete with every entry
+[x] when a task is complete, change the visual representation somehow
     - ( .addClass with a function for changeColor, ex.)
-[ ] store the status of the task in the database
-[ ] the delete function should remove the task (table row) from the DOM and the database 
+[x] store the status of the task in the database
+[x] the delete function should remove the task (table row) from the DOM and the database 
 
 SERVER 
-[ ] create express constants
-[ ] create PORT 
-[ ] create pool
-[ ] create router 
-    [ ] router.get 
-    [ ] router.post 
-    [ ] router.put
-    [ ] router.delete
+[x] create express constants
+[x] create PORT 
+[x] create pool
+[x] create router 
+    [x] router.get 
+    [x] router.post 
+    [x] router.put
+    [x] router.delete
 
 
 DATABASE
-[ ] create new database called 'weekend-to-do-app'
-[ ] attach all queries to the db.sql file 
+[x] create new database called 'weekend-to-do-app'
+[x] attach all queries to the db.sql file 
     (like in every sample file we've been given, there needs to be a sample of information)
