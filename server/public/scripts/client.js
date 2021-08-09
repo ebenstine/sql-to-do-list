@@ -111,4 +111,3 @@ function renderTasks(tasks){
 
 
 //Maybe I went a little light on comments in this.  I felt ok about it since I wrote the README.
-c
